@@ -7,6 +7,10 @@
 > YARN: `1.22.19`
 >
 >Frontend: `ReactJs 18.*.*`
+>
+>username: 'kminchelle',
+>password: '0lelplR',
+   
 
 ### Install Dependencies
 > Install project dependencies: `yarn install`
