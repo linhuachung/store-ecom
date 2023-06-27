@@ -1,0 +1,74 @@
+/*===============  RESPONSIVE  ==================*/
+.ant-dropdown-menu-item:last-child {
+  width: fit-content !important;
+  margin: 10px auto !important;
+  padding: 0 !important;
+
+  a {
+    color: #33A0FF !important;
+  }
+}
+
+.ant-dropdown-menu-item:last-child:hover {
+  background: none !important;
+
+
+}
+
+.btn-cart {
+  padding: 0;
+  border: none;
+}
+
+.btn-cart:hover {
+  border: none;
+}
+
+.btn-cart:active {
+  border: none;
+}
+
+.cart-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 6px;
+
+  .cart-item-left {
+    grid-column: 1/span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    align-items: center;
+
+    .cart-image {
+      height: 54px;
+      width: 100%;
+      border-radius: 7px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .cart-title {
+      grid-column: 2/span 2;
+    }
+  }
+
+
+}
+
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}

@@ -1,0 +1,102 @@
+.form-login {
+  font-weight: 500;
+  color: #1f4e00;
+
+
+  .form-group {
+    margin: 30px auto;
+  }
+
+
+  .field-group {
+    .field {
+      margin-bottom: 0;
+      padding: 0;
+
+      .field-content {
+        margin-top: 5px;
+      }
+
+      .label {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .input-login {
+    border-radius: 40px;
+    padding: 15px 31px;
+  }
+
+
+  .input-password {
+    border-color: #40BFFF;
+    padding: 6.5px 31px;
+
+    input {
+      margin-top: 0;
+    }
+  }
+
+  .field {
+    padding: 8px 0;
+
+  }
+
+  .label {
+    font-weight: bold;
+  }
+
+  .field-action-register {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      color: #1677ff;
+    }
+  }
+
+  .action-box {
+    width: 50%;
+    margin-left: auto;
+
+    .button-login {
+      width: 100%;
+      border-radius: 36px;
+      padding: 22px 0;
+    }
+  }
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #40BFFF;
+  border-color: #40BFFF
+}
+
+/*===============  RESPONSIVE  ==================*/
+@media (max-width: 320px) {
+  .form-container {
+    display: block;
+  }
+}
+
+@media (min-width: 321px) {
+  .form {
+    width: 321px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .form-container {
+    display: flex;
+  }
+}

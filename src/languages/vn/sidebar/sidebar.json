@@ -1,0 +1,16 @@
+{
+  "dashboard": "ダッシュボード",
+  "management": "マスタ管理",
+  "code_master": "コードマスタ",
+  "department": "部署マスタ",
+  "traning_master": "研修マスタ",
+  "company_policy": "会社施策マスタ",
+  "setting": "設定",
+  "create_account": "アカウント作成",
+  "role_settings": "ロール設定",
+  "basic_info": "ユーザー管理",
+  "summary": "サマリ",
+  "user_management": "ユーザー管理",
+  "training_master": "研修マスタ",
+  "es_manager": "ES担当/前任者マスタ"
+}

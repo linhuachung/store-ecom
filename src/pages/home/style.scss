@@ -1,0 +1,84 @@
+.home {
+  margin-top: 125px;
+
+  .promotion {
+    position: relative;
+
+    .slick-slider {
+
+      .slick-track {
+        height: 100%;
+      }
+
+      .slick-prev {
+        display: none;
+      }
+
+      .slick-next {
+        display: none;
+      }
+
+    }
+
+    .outstanding {
+      height: fit-content;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/*===============  RESPONSIVE  ==================*/
+
+@media (min-width: 320px) {
+  .outstanding {
+    display: none;
+  }
+  .slick-slider {
+    .item-img {
+      height: 206px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .outstanding {
+    display: grid;
+    top: 110%;
+  }
+  .home-content {
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .outstanding {
+    top: 105%;
+  }
+  .slick-slider {
+    .slick-slide {
+      .item-img {
+        height: 653px;
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .home-content {
+    margin-top: 220px;
+  }
+}
+

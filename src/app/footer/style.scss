@@ -1,0 +1,150 @@
+
+footer {
+  background: #BCDDFE;
+  color: #22262A;
+  font-size: 14px;
+  padding: 120px 0 56px 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li a {
+      display: block;
+      color: #22262A;
+      padding: 0.2rem 0;
+      text-decoration: none;
+
+      &:hover {
+        color: #40BFFF;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer_content {
+    margin: 0 auto;
+
+    a {
+      width: fit-content;
+    }
+
+    .item-follow {
+      margin-top: 14px;
+
+      a:first-child {
+        margin-right: 39px;
+
+      }
+
+    }
+
+    .footer_link {
+      display: grid;
+      align-items: center;
+
+      .item_footer_logo {
+        margin-bottom: 20px;
+        width: fit-content;
+
+        .title {
+          margin-bottom: 0;
+        }
+      }
+
+
+      .change_language_button {
+        margin-left: auto;
+
+        .flags {
+          border: 1px solid #fff;
+        }
+      }
+    }
+
+    .footer_information {
+      margin-bottom: 48px;
+
+    }
+  }
+
+  .footer_link_item {
+    width: 50%;
+
+    .logo {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: fit-content;
+      gap: 5px;
+
+      .logo-item {
+        height: 80%;
+        width: fit-content;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .footer_logo {
+    width: 90%;
+    padding: 34px 20px 0 20px;
+    border-top: 1px solid #F6F7F8;
+    margin-top: 63px;
+
+    .description {
+      font-size: 14px;
+      color: #C1C8CE;
+    }
+
+
+  }
+}
+
+
+/*===============  RESPONSIVE  ==================*/
+
+@media (min-width: 320px) {
+  .footer_content {
+    width: 90%;
+  }
+  .title {
+    margin-top: 9px;
+    margin-bottom: 25px;
+  }
+  .footer_link {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer_information {
+    grid-template-columns: repeat(2, 1fr);
+
+    .footer_link_item {
+      width: 150px;
+    }
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .footer_content {
+    width: 70%;
+  }
+  .title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .footer_link {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer_information {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 48px;
+
+    .footer_link_item {
+      width: 221px;
+    }
+  }
+}

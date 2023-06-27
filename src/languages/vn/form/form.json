@@ -1,0 +1,21 @@
+{
+  "min": "Các ký tự tối thiểu không hợp lệ (6)",
+  "max255": "Số ký tự tối đa không hợp lệ (255)",
+  "matchesPassword": "Mật khẩu không khớp",
+  "sameAsCurrentPassword": "Giống mật khẩu hiện tại",
+  "matchesEmail": "Email không khớp",
+  "matches": "Kiểu dữ liệu không hợp lệ",
+  "number": "Phải là số",
+  "isNumberNot0": "Vui lòng nhập số lớn hơn 0",
+  "required": "Đây là trường bắt buộc",
+  "integer": "Trường này phải là số",
+  "email": "Email không hợp lệ",
+  "min4": "Trường này phải có ít nhất 4 ký tự",
+  "min6": "Trường này phải có ít nhất 6 ký tự",
+  "max4": "Tối đa là 4 ký tự",
+  "max6": "Tối đa là 6 ký tự",
+  "max10": "Tối đa là 10 ký tự",
+  "max40": "Tối đa là 40 ký tự",
+  "max": "Tối đa là 255 ký tự",
+  "only_space_in_valid": "Chỉ khoảng trống là không hợp lệ"
+}

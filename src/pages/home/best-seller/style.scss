@@ -1,0 +1,64 @@
+.best-seller {
+  margin-bottom: 85px;
+  .title {
+    text-align: center;
+  }
+
+  .item {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 45px;
+  }
+
+  .ant-tabs-nav {
+    margin-bottom: 24px;
+  }
+
+  .ant-tabs-nav::before {
+    position: relative;
+  }
+
+  .ant-tabs-tab {
+    padding-bottom: 2px;
+  }
+
+  .load-more {
+    color: #33A0FF;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-bottom: 93px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s;
+    border: none;
+    font-size: 16px;
+  }
+
+  .load-more:hover {
+    color: #BCDDFE;
+  }
+}
+
+/*===============  RESPONSIVE  ==================*/
+
+@media (min-width: 320px) {
+  .item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .best-seller {
+    .item {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+

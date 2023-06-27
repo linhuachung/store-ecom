@@ -1,0 +1,93 @@
+.field {
+  position: relative;
+
+  .label {
+    margin-bottom: 5px;
+    color: #3c492f;
+
+    .note-label {
+      color: #828282;
+      font-size: 0.75em;
+      margin-left: 10px;
+    }
+  }
+
+  .field-content {
+    position: relative;
+
+    .error-message {
+      text-align: right;
+      font-size: 12px;
+      color: red;
+      height: 18px;
+      margin-top: 3px;
+    }
+
+    .ant-input {
+      margin-top: 5px;
+      color: #9098B1;
+    }
+  }
+
+  &.inline {
+    display: flex;
+    align-items: center;
+
+    .label {
+      width: 125px;
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 0;
+      letter-spacing: 0.29px;
+      color: #3c492f;
+    }
+
+    .field-content {
+      flex: 1;
+      min-width: 0;
+
+      .error-message {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        height: auto;
+      }
+    }
+  }
+}
+
+/*===============  RESPONSIVE  ==================*/
+
+@media (min-width: 320px) {
+  .field {
+    margin-bottom: 15px;
+
+    &.inline {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .field-content {
+        width: 100%;
+      }
+
+      .label {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .field {
+    &.inline {
+      flex-direction: row;
+      align-items: center;
+
+      .label {
+        width: 125px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

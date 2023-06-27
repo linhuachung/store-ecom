@@ -1,0 +1,112 @@
+button.ant-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hiragino Sans GB W6";
+  box-shadow: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  height: 40px;
+  font-weight: bold !important;
+
+  &.ant-btn-primary {
+    background-color: #40BFFF;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: #BCDDFE;
+      color: white;
+    }
+
+    &:active {
+      background-color: #BCDDFE;
+    }
+
+    &:focus {
+      background-color: #BCDDFE;
+      color: white;
+
+      &:hover {
+        background-color: #BCDDFE;
+      }
+
+      &:active {
+        background-color: #BCDDFE;
+      }
+    }
+  }
+
+  &.ant-btn-warning {
+    background-color: #ffbf43;
+    color: #452e00;
+    border: none;
+
+    &:hover {
+      background-color: #ffbf43;
+      color: #452e00;
+    }
+
+    &:active {
+      background-color: #ffbf43;
+    }
+
+    &:focus {
+      background-color: #ffbf43;
+      color: #452e00;
+
+      &:hover {
+        background-color: #ffbf43;
+      }
+
+      &:active {
+        background-color: #ffbf43;
+      }
+    }
+  }
+
+  &.ant-btn-basic {
+    background-color: #F6F7F8;
+    color: #262626;
+    border: none;
+
+    &:hover {
+      background-color: #F6F7F8;
+      color: #262626;
+      border: none;
+    }
+
+    &:active {
+      background-color: #F6F7F8;
+      color: #262626;
+      border: none;
+    }
+
+    &:focus {
+      background-color: #F6F7F8;
+      color: #262626;
+      border: none;
+
+      &:hover {
+        background-color: #dfdfdf;
+        color: #262626;
+        border: none;
+      }
+
+      &:active {
+        background-color: #F6F7F8;
+        color: #262626;
+        border: none;
+      }
+    }
+  }
+
+  &:disabled, &:disabled:hover {
+    background: #BCDDFE;
+  }
+
+  &.ant-btn-sm {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+}

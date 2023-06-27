@@ -1,0 +1,41 @@
+.ant-modal-wrap {
+  z-index: 1000;
+  padding: 20px;
+  .ant-modal {
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  .ant-modal-close {
+    //display: none;
+  }
+  img,
+  // div,
+  p,
+  span,
+  b,
+  i,
+  ul,
+  li,
+  ol,
+  a,
+  .ant-modal-content {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  //style scroll modal
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

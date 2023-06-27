@@ -1,0 +1,15 @@
+
+.switch-custom {
+  &::after {
+    background: #757575;
+  }
+
+  &.ant-switch-checked {
+    background-color: #e9ffda;
+    border-color: #b6dd99;
+
+    &::after {
+      background: #4ea012;
+    }
+  }
+}

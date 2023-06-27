@@ -1,0 +1,553 @@
+.container {
+  margin-top: 200px;
+.loading{
+  height: fit-content;
+  margin-bottom: 55px;
+}
+  .item-right {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .filter {
+      background: #F6F7F8;
+      margin-top: 23px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        object-fit: none;
+      }
+
+      .anticon {
+        display: block;
+      }
+
+      .item-left {
+        padding-left: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .button-filter {
+          > button {
+            padding: 0;
+            border: none;
+            background: #F6F7F8;
+          }
+        }
+
+        .dropdown-filter {
+          width: 126px;
+          height: 36px;
+          margin-left: 34px;
+
+          .ant-select-selector {
+            background: #F6F7F8;
+            height: 100%;
+            border: 2px solid #F1F3F4
+
+          }
+        }
+      }
+
+      .item-right {
+        display: flex;
+
+        .view-mode {
+          height: 58px;
+          width: 55px;
+          border: none;
+          background: #F6F7F8;
+          padding: 0;
+        }
+      }
+    }
+
+    .content {
+      display: grid;
+      margin-bottom: 45px;
+    }
+
+    .anticon {
+      display: none;
+    }
+  }
+}
+
+/*===============  RESPONSIVE  ==================*/
+
+@media (min-width: 320px) {
+  .container {
+    .search-content {
+      display: block;
+
+      .item-left {
+        .item {
+          display: none;
+        }
+
+        display: none;
+        //grid-column: 1 / span 3;
+      }
+    }
+
+    .search-hot-deals {
+      padding: 20px;
+      background: #F6F7F8;
+      margin-bottom: 30px;
+
+      .hot-deal-content {
+        .hot-deal-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+          font-size: 18px;
+
+          .hot-deal-name {
+            transition: all 0.3s;
+          }
+
+          .hot-deal-name:hover {
+            color: #33A0FF;
+            cursor: pointer;
+          }
+
+          .hot-deal-number {
+            opacity: 35%;
+          }
+        }
+
+        .hot-deal-item:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .search-prices {
+      padding: 20px;
+      background: #F6F7F8;
+      margin-bottom: 30px;
+
+      .search-prices-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+    }
+
+    .search-color {
+      padding: 20px;
+      background: #F6F7F8;
+      margin-bottom: 30px;
+
+      .search-color-item {
+        .ant-radio-inner {
+          width: 30px;
+          height: 30px;
+        }
+
+        .ant-radio-inner::after {
+          display: none;
+        }
+
+        .ant-radio {
+          padding: 4px;
+
+        }
+
+        .ant-radio-checked {
+          border: 2px solid #006cff4d;
+          border-radius: 50%;
+        }
+      }
+
+      .item1 {
+        .ant-radio-inner {
+          background: #006CFF;
+          border-color: #006CFF;
+        }
+      }
+
+      .item2 {
+        .ant-radio-inner {
+          background: #FC3E39;
+          border-color: #FC3E39;
+        }
+      }
+
+      .item3 {
+        .ant-radio-inner {
+          background: #171717;
+          border-color: #171717;
+        }
+      }
+
+      .item4 {
+        .ant-radio-inner {
+          background: #FFF600;
+          border-color: #FFF600;
+        }
+      }
+
+      .item5 {
+        .ant-radio-inner {
+          background: #FF00B4;
+          border-color: #FF00B4;
+        }
+      }
+
+      .item6 {
+        .ant-radio-inner {
+          background: #EFDFDF;
+          border-color: #EFDFDF;
+        }
+      }
+    }
+
+    .search-more {
+      height: 56px;
+
+      button {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+      }
+
+      button:hover {
+        background: #dfdfdf !important;
+      }
+    }
+
+    .item-right {
+      .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 34px;
+      }
+
+      .carousel {
+        .slick-list {
+          height: 200px;
+        }
+      }
+
+      .filter {
+        .item-left {
+          .button-filter {
+            display: block;
+            position: relative;
+          }
+        }
+      }
+
+      .pagination {
+        background: #FAFAFB;
+
+        .ant-pagination {
+          text-align: center;
+
+          .ant-pagination-item-active {
+            color: #fff;
+            background: #40BFFF;
+            border: none;
+          }
+
+          .ant-pagination-item:hover {
+            color: #fff;
+            background: #40BFFF;
+            border-color: #40BFFF;
+
+            a {
+              color: white !important;
+            }
+          }
+
+          .ant-pagination-item {
+            min-width: 63px;
+            height: 56px;
+            line-height: 56px;
+          }
+        }
+      }
+    }
+
+    .filter-container-res {
+      display: block;
+      min-width: 50vw;
+      background: white;
+      position: absolute;
+      z-index: 1;
+      max-height: 50vh;
+      overflow: auto;
+
+      .search-filter-res {
+        background: white;
+
+        .title {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .ant-radio-inner {
+          width: 25px;
+          height: 25px;
+        }
+
+        .item-responsive {
+          display: block;
+        }
+      }
+
+      .btn-filter-more {
+        margin-bottom: 10px;
+
+        button {
+          width: 100%;
+        }
+      }
+
+      .close {
+        padding-bottom: 5px;
+
+        button {
+          width: fit-content;
+          margin: 0 auto;
+          background: none !important;
+          color: #40BFFF;
+        }
+      }
+
+
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    .item-right {
+      .content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 34px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    .search-content {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 32px;
+
+      .item-left {
+        display: block;
+        grid-column: 1 / span 3;
+      }
+
+      .item-right {
+        grid-column: 4 / span 9;
+      }
+    }
+
+    .search-hot-deals {
+      padding: 20px;
+      background: #F6F7F8;
+      margin-bottom: 30px;
+
+      .hot-deal-content {
+        .hot-deal-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+          font-size: 18px;
+
+          .hot-deal-name {
+            transition: all 0.3s;
+          }
+
+          .hot-deal-name:hover {
+            color: #33A0FF;
+            cursor: pointer;
+          }
+
+          .hot-deal-number {
+            opacity: 35%;
+          }
+        }
+
+        .hot-deal-item:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .search-prices {
+      padding: 20px;
+      background: #F6F7F8;
+      margin-bottom: 30px;
+
+      .search-prices-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+    }
+
+    .search-color {
+      padding: 20px;
+      background: #F6F7F8;
+      margin-bottom: 30px;
+
+      .search-color-item {
+        .ant-radio-inner {
+          width: 30px;
+          height: 30px;
+        }
+
+        .ant-radio-inner::after {
+          display: none;
+        }
+
+        .ant-radio {
+          padding: 4px;
+
+        }
+
+        .ant-radio-checked {
+          border: 2px solid #006cff4d;
+          border-radius: 50%;
+        }
+      }
+
+      .item1 {
+        .ant-radio-inner {
+          background: #006CFF;
+          border-color: #006CFF;
+        }
+      }
+
+      .item2 {
+        .ant-radio-inner {
+          background: #FC3E39;
+          border-color: #FC3E39;
+        }
+      }
+
+      .item3 {
+        .ant-radio-inner {
+          background: #171717;
+          border-color: #171717;
+        }
+      }
+
+      .item4 {
+        .ant-radio-inner {
+          background: #FFF600;
+          border-color: #FFF600;
+        }
+      }
+
+      .item5 {
+        .ant-radio-inner {
+          background: #FF00B4;
+          border-color: #FF00B4;
+        }
+      }
+
+      .item6 {
+        .ant-radio-inner {
+          background: #EFDFDF;
+          border-color: #EFDFDF;
+        }
+      }
+    }
+
+    .search-more {
+      height: 56px;
+
+      button {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+      }
+
+      button:hover {
+        background: #dfdfdf !important;
+      }
+    }
+
+    .item-right {
+      .slick-list {
+        height: 300px !important;
+      }
+
+      .content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 34px;
+      }
+
+      .pagination {
+        background: #FAFAFB;
+
+        .ant-pagination {
+          text-align: center;
+
+          .ant-pagination-item-active {
+            color: #fff;
+            background: #40BFFF;
+            border: none;
+          }
+
+          .ant-pagination-item:hover {
+            color: #fff;
+            background: #40BFFF;
+            border-color: #40BFFF;
+
+            a {
+              color: white !important;
+            }
+          }
+
+          .ant-pagination-item {
+            min-width: 63px;
+            height: 56px;
+            line-height: 56px;
+          }
+        }
+      }
+
+      .filter {
+        .item-left {
+          width: 50%;
+
+          .item {
+            display: block;
+          }
+
+          .button-filter {
+            display: none !important;
+          }
+        }
+      }
+    }
+
+    .filter-container-res {
+      display: none;
+    }
+  }
+}
+

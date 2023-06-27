@@ -1,0 +1,16 @@
+{
+  "dashboard": "Dashboard",
+  "user_management": "User management",
+  "management": "Master management",
+  "traning_master": "Traning master",
+  "code_master": "Code master",
+  "department": "Department",
+  "company_policy": "Company policy",
+  "setting": "Setting",
+  "create_account": "Create account",
+  "role_settings": "Role settings",
+  "basic_info": "Basic info",
+  "summary": "Summary",
+  "training_master": "Training master",
+  "es_manager": "ES manager/Predecessor master"
+}

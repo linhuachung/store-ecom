@@ -1,0 +1,30 @@
+.page-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      font-size: 25px;
+      color: #BCDDFE;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-size: 100px;
+      color: #40BFFF;
+      font-weight: bold;
+    }
+
+    .btn-go-home {
+      margin-top: 20px;
+    }
+  }
+}
