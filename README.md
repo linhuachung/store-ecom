@@ -1,4 +1,4 @@
-# React Js Formular Clone
+# React Js Ecom Clone
 
 ### Environment requirement
 >
